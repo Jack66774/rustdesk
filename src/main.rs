@@ -48,10 +48,10 @@ fn main() {
         -k, --key=[KEY] ''
        -s, --server=[] 'Start server'",
     );
-    let matches = App::new("华晨教育")
+    let matches = App::new("rustdesk")
         .version(crate::VERSION)
-        .author("华晨教育<36321113@qq.com>")
-        .about("华晨教育 command line tool")
+        .author("rustdesk <info@rustdesk.com>")
+        .about("RustDesk command line tool")
         .args_from_usage(&args)
         .get_matches();
     use hbb_common::{config::LocalConfig, env_logger::*};
